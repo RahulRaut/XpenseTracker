@@ -11,15 +11,53 @@
 
 .glassmorphism {
     background: rgba(255, 255, 255, 0.2);
-    /* Adjust the alpha value for opacity */
-    border-radius: 10px;
+    /* alpha value for opacity */
+    /* border-radius: 10px; */
     /* Rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.18);
-    /* Subtle white border */
+    /* white border */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
+    /*  shadow for depth */
     backdrop-filter: blur(10px);
-    /* Blur the background behind the element */
+}
+
+.addincomebutton {
+    background: rgba(6, 218, 16, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    /* white border */
+    box-shadow: 0 8px 12px rgba(245, 243, 243, 0.1);
+    /*  shadow for depth */
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+}
+
+.addexpensebutton {
+    background: rgba(241, 35, 8, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    /* white border */
+    box-shadow: 0 8px 12px rgba(245, 243, 243, 0.1);
+    /*  shadow for depth */
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+}
+
+.addexpensebutton2 {
+    background: rgba(255, 113, 8, 0.856);
+    border: 10px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    /* border */
+    box-shadow: 0 8px 12px rgba(245, 243, 243, 0.1);
+    /*  shadow for depth */
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+}
+.addbalancebutton{
+    background: rgba(255, 113, 8, 0.856);
+    color: aliceblue;
+    border-radius: 10px;
+    border: 10px solid rgba(255, 255, 255, 0);
 }
 
 .glassmorphismButton,
@@ -27,15 +65,12 @@ input,
 select,
 select>option {
     background: rgba(255, 255, 255, 0.2);
-    /* Adjust the alpha value for opacity */
+    /* alpha value for opacity */
     border-radius: 10px;
     /* Rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.18);
-    /* Subtle white border */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
     backdrop-filter: blur(10px);
-    /* Blur the background behind the element */
     margin: 10px;
     padding: 15px;
     font-weight: bold;
@@ -45,7 +80,7 @@ select>option {
     margin: 40px;
     padding: 20px;
     min-width: 300px;
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -65,11 +100,11 @@ select>option {
 }
 
 .income-amount {
-    color: green;
+    color: rgb(64, 240, 64);
 }
 
 .expense-amount {
-    color: red;
+    color: rgb(248, 137, 46);
 }
 
 .modal-header {

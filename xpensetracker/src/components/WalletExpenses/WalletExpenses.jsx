@@ -109,7 +109,7 @@ const WalletExpenses = ({
             <span className="income-amount"> ₹{walletBalance} </span>
           </h2>
           <button
-            className="glassmorphism"
+            className="addincomebutton"
             onClick={() => setIsIncomeModalOpen(true)}
           >
             + Add Income
@@ -121,7 +121,7 @@ const WalletExpenses = ({
             <span className="expense-amount"> ₹{getTotalExpenses()} </span>
           </h2>
           <button
-            className="glassmorphism"
+            className="addexpensebutton"
             onClick={() => setIsExpenseModalOpen(true)}
           >
             + Add Expense
@@ -136,7 +136,7 @@ const WalletExpenses = ({
         style={modalStyle}
         contentLabel="Add New Income"
       >
-        <h2 className="modal-header">Add New Income</h2>
+        <h2 className="modal-header">Add Balance</h2>
         <form className="modal-form-income" onSubmit={addIncome}>
           <input
             className="glassmorphismButton"
@@ -148,8 +148,8 @@ const WalletExpenses = ({
             required
           />
           <div>
-            <button className="glassmorphismButton" type="submit">
-              Add Income
+            <button className="addbalancebutton" type="submit">
+              Add Balance
             </button>
             <button
               className="glassmorphismButton"
@@ -166,9 +166,9 @@ const WalletExpenses = ({
         isOpen={isExpenseModalOpen}
         onRequestClose={() => setIsExpenseModalOpen(false)}
         style={modalStyle}
-        contentLabel="Add New Expense"
+        contentLabel="Add Expenses"
       >
-        <h2 className="modal-header">Add New Expense</h2>
+        <h2 className="modal-header">Add Expenses</h2>
         <form className="modal-form-expense" onSubmit={addExpense}>
           <input
             name="title"
@@ -209,7 +209,7 @@ const WalletExpenses = ({
             required
           />
           <div>
-            <button className="glassmorphismButton" type="submit">
+            <button className="addexpensebutton2" type="submit">
               Add Expense
             </button>
             <button
